@@ -1,0 +1,13 @@
+%implements s1_b0_mileg_Update "C"
+
+%function Update(block, system) Output
+%assign tlcUpdateFcnOfS1B1 = OpaqueTLCBlockFcn("Update", 1, 1)
+%assign tlcUpdateFcnOfS1B8 = OpaqueTLCBlockFcn("Update", 1, 8)
+%assign tlcUpdateFcnOfS1B13 = OpaqueTLCBlockFcn("Update", 1, 13)
+
+%<tlcUpdateFcnOfS1B1>\
+
+%<tlcUpdateFcnOfS1B8>\
+
+%<tlcUpdateFcnOfS1B13>\
+%endfunction

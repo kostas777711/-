@@ -1,0 +1,25 @@
+function [ Y ] = FFD( S,F )
+%UNTITLED1 Summary of this function goes here
+%  Detailed explanation goes here
+persistent X;
+
+
+[m,n] = size(X);
+if (~((m == 1) | (n == 3)) )
+    X=zeros(1,3);end
+end
+X(3)=X(2);
+X(2)=X(1);
+
+X(1)=S;
+if X(2)==0
+    a=0;
+    m=0;
+elseif abs(X(1)+X(3))>abs(2*X(2))
+    a=0;
+    m=0;
+else
+    a=(acos((X(1)+X(3))/(2*X(2))))/(2*pi);
+    m=X(2)^2;
+end
+Y=F-a;

@@ -1,0 +1,16 @@
+%implements s1_b0_mileg_InitializeConditions "C"
+
+%function InitializeConditions(block, system) Output
+%assign tlcInitializeConditionsFcnOfS1B1 = OpaqueTLCBlockFcn("InitializeConditions", 1, 1)
+%assign tlcInitializeConditionsFcnOfS1B8 = OpaqueTLCBlockFcn("InitializeConditions", 1, 8)
+%assign tlcInitializeConditionsFcnOfS1B12 = OpaqueTLCBlockFcn("InitializeConditions", 1, 12)
+%assign tlcInitializeConditionsFcnOfS1B13 = OpaqueTLCBlockFcn("InitializeConditions", 1, 13)
+
+%<tlcInitializeConditionsFcnOfS1B1>\
+
+%<tlcInitializeConditionsFcnOfS1B8>\
+
+%<tlcInitializeConditionsFcnOfS1B12>\
+
+%<tlcInitializeConditionsFcnOfS1B13>\
+%endfunction

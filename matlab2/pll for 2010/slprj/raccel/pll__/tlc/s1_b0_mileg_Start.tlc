@@ -1,0 +1,40 @@
+%implements s1_b0_mileg_Start "C"
+
+%function Start(block, system) Output
+%assign tlcStartFcnOfS1B1 = OpaqueTLCBlockFcn("Start", 1, 1)
+%assign tlcStartFcnOfS1B2 = OpaqueTLCBlockFcn("Start", 1, 2)
+%assign tlcStartFcnOfS1B3 = OpaqueTLCBlockFcn("Start", 1, 3)
+%assign tlcStartFcnOfS1B4 = OpaqueTLCBlockFcn("Start", 1, 4)
+%assign tlcStartFcnOfS1B8 = OpaqueTLCBlockFcn("Start", 1, 8)
+%assign tlcStartFcnOfS1B9 = OpaqueTLCBlockFcn("Start", 1, 9)
+%assign tlcStartFcnOfS1B10 = OpaqueTLCBlockFcn("Start", 1, 10)
+%assign tlcStartFcnOfS1B12 = OpaqueTLCBlockFcn("Start", 1, 12)
+%assign tlcStartFcnOfS1B13 = OpaqueTLCBlockFcn("Start", 1, 13)
+%assign tlcStartFcnOfS1B14 = OpaqueTLCBlockFcn("Start", 1, 14)
+
+%<SLibCG_SetBOV(2, 0, 1, 1, "", -1, "", 0, "%<SLibCGIR_PV(2, 0, 1, 1, "", -1, "", 0)>")>\
+%<SLibCG_SetDWV(0, 0, 1, 1, "", -1, "", 0, "%<LibGetMathConstant(LibRealNonFinite("-inf"), FcnGetDataTypeIdFromName("double"))>")>\
+
+%<tlcStartFcnOfS1B1>\
+
+%<tlcStartFcnOfS1B2>\
+
+%<tlcStartFcnOfS1B3>\
+
+%<tlcStartFcnOfS1B4>\
+
+%<SLibCG_SetBOV(7, 0, 1, 1, "", -1, "", 0, "%<SLibCGIR_PV(8, 0, 1, 1, "", -1, "", 0)>")>\
+%<SLibCG_SetDWV(1, 0, 1, 1, "", -1, "", 0, "%<LibGetMathConstant(LibRealNonFinite("-inf"), FcnGetDataTypeIdFromName("double"))>")>\
+
+%<tlcStartFcnOfS1B8>\
+
+%<tlcStartFcnOfS1B9>\
+
+%<tlcStartFcnOfS1B10>\
+
+%<tlcStartFcnOfS1B12>\
+
+%<tlcStartFcnOfS1B13>\
+
+%<tlcStartFcnOfS1B14>\
+%endfunction

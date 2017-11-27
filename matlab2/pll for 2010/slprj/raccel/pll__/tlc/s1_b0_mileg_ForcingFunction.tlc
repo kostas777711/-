@@ -1,0 +1,16 @@
+%implements s1_b0_mileg_ForcingFunction "C"
+
+%function ForcingFunction(block, system) Output
+%assign tlcForcingFunctionFcnOfS1B1 = OpaqueTLCBlockFcn("ForcingFunction", 1, 1)
+%assign tlcForcingFunctionFcnOfS1B8 = OpaqueTLCBlockFcn("ForcingFunction", 1, 8)
+%assign tlcForcingFunctionFcnOfS1B12 = OpaqueTLCBlockFcn("ForcingFunction", 1, 12)
+%assign tlcForcingFunctionFcnOfS1B13 = OpaqueTLCBlockFcn("ForcingFunction", 1, 13)
+
+%<tlcForcingFunctionFcnOfS1B1>\
+
+%<tlcForcingFunctionFcnOfS1B8>\
+
+%<tlcForcingFunctionFcnOfS1B12>\
+
+%<tlcForcingFunctionFcnOfS1B13>\
+%endfunction

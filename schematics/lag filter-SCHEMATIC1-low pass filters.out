@@ -1,0 +1,82 @@
+
+**** 05/15/09 05:11:02 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-low pass filters"  [ D:\ORCAD\WORKS DIPLOMATIKHS\lag filter-schematic1-low pass filters.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "lag filter-schematic1-low pass filters.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of d:\ORCAD\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 10 10 1000k
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\lag filter-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING "lag filter-SCHEMATIC1.net" ****
+* source LAG FILTER
+R_R4         0 N029110  1k  
+V_V3         VIN3 0 DC 0Vdc AC 1Vac 
+C_C3         N029110 VOUT3  1n  
+L_L1         VIN1 VOUT1  10mH  
+R_R1         0 VOUT1  1k  
+V_V2         VIN2 0 DC 0Vdc AC 1Vac 
+R_R2         VIN2 VOUT2  1k  
+C_C2         0 VOUT2  1n  
+V_V1         VIN1 0 DC 0Vdc AC 1Vac 
+R_R3         VIN3 VOUT3  1k  
+
+**** RESUMING "lag filter-schematic1-low pass filters.sim.cir" ****
+.END
+
+**** 05/15/09 05:11:02 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-low pass filters"  [ D:\ORCAD\WORKS DIPLOMATIKHS\lag filter-schematic1-low pass filters.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+( VIN1)    0.0000  ( VIN2)    0.0000  ( VIN3)    0.0000  (VOUT1)    0.0000      
+
+(VOUT2)    0.0000  (VOUT3)    0.0000  (N029110)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3         0.000E+00
+    V_V2         0.000E+00
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .02
+

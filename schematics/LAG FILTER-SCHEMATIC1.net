@@ -1,0 +1,11 @@
+* source LAG FILTER
+R_R4         0 N029110  1k  
+V_V3         VIN3 0 DC 0Vdc AC 1Vac 
+C_C3         N029110 VOUT3  1n  
+L_L1         VIN1 VOUT1  10mH  
+R_R1         0 VOUT1  1k  
+V_V2         VIN2 0 DC 0Vdc AC 1Vac 
+R_R2         VIN2 VOUT2  1k  
+C_C2         0 VOUT2  1n  
+V_V1         VIN1 0 DC 0Vdc AC 1Vac 
+R_R3         VIN3 VOUT3  1k  

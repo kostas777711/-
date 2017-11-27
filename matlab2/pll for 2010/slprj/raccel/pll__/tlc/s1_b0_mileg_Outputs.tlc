@@ -1,0 +1,111 @@
+%implements s1_b0_mileg_Outputs "C"
+
+%function Outputs(block, system) Output
+%<SLibCGIRAccessLocalVar(4, 0)> %% rtb_sin
+%assign tlcOutputsFcnOfS1B1 = OpaqueTLCBlockFcn("Outputs", 1, 1)
+%assign tlcOutputsFcnOfS1B2 = OpaqueTLCBlockFcn("Outputs", 1, 2)
+%assign tlcOutputsFcnOfS1B3 = OpaqueTLCBlockFcn("Outputs", 1, 3)
+%assign tlcOutputsFcnOfS1B4 = OpaqueTLCBlockFcn("Outputs", 1, 4)
+%assign tlcOutputsFcnOfS1B8 = OpaqueTLCBlockFcn("Outputs", 1, 8)
+%assign tlcOutputsFcnOfS1B9 = OpaqueTLCBlockFcn("Outputs", 1, 9)
+%assign tlcOutputsFcnOfS1B10 = OpaqueTLCBlockFcn("Outputs", 1, 10)
+%assign tlcOutputsFcnOfS0B0 = OpaqueTLCBlockFcn("Outputs", 0, 0)
+%assign tlcOutputsFcnOfS1B12 = OpaqueTLCBlockFcn("Outputs", 1, 12)
+%assign tlcOutputsFcnOfS1B13 = OpaqueTLCBlockFcn("Outputs", 1, 13)
+%assign tlcOutputsFcnOfS1B14 = OpaqueTLCBlockFcn("Outputs", 1, 14)
+
+%<SLibCG_SetBOV(0, 0, 1, 1, "", -1, "", 0, "%<SLibCG_SE(SLibCGIR_PV(0, 0, 1, 1, "", -1, "", 0))> * %<SLibCG_SE(SLibCG_CS(0, 0, 1, 1, -1, "", 0))>")>\
+
+if(%<LibIsMajorTimeStep()>) {
+%<SLibCG_SetDWV(6, 0, 1, 1, "", -1, "", 0, "%<SLibCG_SE(SLibCG_BOV(0, 0, 1, 1, "", -1, "", 0))> >= 0.0 ? 1 : 0")>\
+}
+%<SLibCG_SetBOV(1, 0, 1, 1, "", -1, "", 0, "%<SLibCG_SE(SLibCG_DWV(6, 0, 1, 1, "", -1, "", 0))> > 0 ? %<SLibCG_SE(SLibCG_BOV(0, 0, 1, 1, "", -1, "", 0))> : -%<SLibCG_SE(SLibCG_BOV(0, 0, 1, 1, "", -1, "", 0))>")>\
+if(%<LibIsSampleHit(1)>) {
+
+if(%<LibIsMajorTimeStep()>) {
+%<SLibCG_SetDWV(10, 0, 1, 1, "", -1, "", 0, "(%<SLibCG_SE(SLibCG_BOV(1, 0, 1, 1, "", -1, "", 0))> >= %<SLibCG_SE(SLibCGIR_PV(1, 0, 1, 1, "", -1, "", 0))>)")>\
+}
+%<SLibCG_SetBOV(17, 0, 1, 1, "", -1, "", 0, "%<SLibCG_DWV(10, 0, 1, 1, "", -1, "", 0)>")>\
+}
+
+rtb_sin = muDoubleScalarRem(%<SLibCG_BOV(0, 0, 1, 1, "", -1, "", 0)>, %<SLibCGIR_PV(1, 0, 1, 1, "", -1, "", 0)>);
+
+if((%<SLibCG_SE(SLibCG_DWV(0, 0, 1, 1, "", -1, "", 0))> == %<LibGetMathConstant(LibRealNonFinite("-inf"), FcnGetDataTypeIdFromName("double"))>) || (%<SLibCG_SE(SLibCG_DWV(0, 0, 1, 1, "", -1, "", 0))> == %<SLibCG_SE(LibGetTaskTime(0))>)) {
+%<SLibCG_SetDWV(0, 0, 1, 1, "", -1, "", 0, "%<LibGetTaskTime(0)>")>\
+%<SLibCG_SetBOV(2, 0, 1, 1, "", -1, "", 0, "%<SLibCGIR_PV(2, 0, 1, 1, "", -1, "", 0)>")>\
+} else {
+%<SLibCG_SetBOV(2, 0, 1, 1, "", -1, "", 0, "rtb_sin")>\
+}
+
+%<tlcOutputsFcnOfS1B1>\
+
+%<tlcOutputsFcnOfS1B2>\
+
+rtb_sin = muDoubleScalarCos(rtb_sin * 6.2831853071795862);
+
+%<tlcOutputsFcnOfS1B3>\
+
+%<SLibCG_SetBOV(4, 0, 1, 1, "", -1, "", 0, "%<SLibCG_SE(SLibCG_BOV(3, 0, 1, 1, "", -1, "", 0))> < 0.0 ? (-muDoubleScalarFloor(muDoubleScalarAbs(%<SLibCG_SE(SLibCG_BOV(3, 0, 1, 1, "", -1, "", 0))> / %<SLibCG_SE(SLibCGIR_PV(3, 0, 1, 1, "", -1, "", 0))>) + 0.5)) * %<SLibCG_SE(SLibCGIR_PV(3, 0, 1, 1, "", -1, "", 0))> : muDoubleScalarFloor(muDoubleScalarAbs(%<SLibCG_SE(SLibCG_BOV(3, 0, 1, 1, "", -1, "", 0))> / %<SLibCG_SE(SLibCGIR_PV(3, 0, 1, 1, "", -1, "", 0))>) + 0.5) * %<SLibCG_SE(SLibCGIR_PV(3, 0, 1, 1, "", -1, "", 0))>")>\
+
+%<tlcOutputsFcnOfS1B4>\
+
+%<SLibCG_SetBOV(5, 0, 1, 1, "", -1, "", 0, "%<SLibCG_SE(SLibCGIR_PV(6, 0, 1, 1, "", -1, "", 0))> * %<SLibCG_SE(SLibCG_CS(1, 0, 1, 1, -1, "", 0))>")>\
+
+if(%<LibIsMajorTimeStep()>) {
+%<SLibCG_SetDWV(7, 0, 1, 1, "", -1, "", 0, "%<SLibCG_SE(SLibCG_BOV(5, 0, 1, 1, "", -1, "", 0))> >= 0.0 ? 1 : 0")>\
+}
+%<SLibCG_SetBOV(6, 0, 1, 1, "", -1, "", 0, "%<SLibCG_SE(SLibCG_DWV(7, 0, 1, 1, "", -1, "", 0))> > 0 ? %<SLibCG_SE(SLibCG_BOV(5, 0, 1, 1, "", -1, "", 0))> : -%<SLibCG_SE(SLibCG_BOV(5, 0, 1, 1, "", -1, "", 0))>")>\
+if(%<LibIsSampleHit(1)>) {
+
+if(%<LibIsMajorTimeStep()>) {
+%<SLibCG_SetDWV(11, 0, 1, 1, "", -1, "", 0, "(%<SLibCG_SE(SLibCG_BOV(6, 0, 1, 1, "", -1, "", 0))> >= %<SLibCG_SE(SLibCGIR_PV(7, 0, 1, 1, "", -1, "", 0))>)")>\
+}
+%<SLibCG_SetBOV(18, 0, 1, 1, "", -1, "", 0, "%<SLibCG_DWV(11, 0, 1, 1, "", -1, "", 0)>")>\
+}
+
+rtb_sin = muDoubleScalarRem(%<SLibCG_BOV(5, 0, 1, 1, "", -1, "", 0)>, %<SLibCGIR_PV(7, 0, 1, 1, "", -1, "", 0)>);
+
+if((%<SLibCG_SE(SLibCG_DWV(1, 0, 1, 1, "", -1, "", 0))> == %<LibGetMathConstant(LibRealNonFinite("-inf"), FcnGetDataTypeIdFromName("double"))>) || (%<SLibCG_SE(SLibCG_DWV(1, 0, 1, 1, "", -1, "", 0))> == %<SLibCG_SE(LibGetTaskTime(0))>)) {
+%<SLibCG_SetDWV(1, 0, 1, 1, "", -1, "", 0, "%<LibGetTaskTime(0)>")>\
+%<SLibCG_SetBOV(7, 0, 1, 1, "", -1, "", 0, "%<SLibCGIR_PV(8, 0, 1, 1, "", -1, "", 0)>")>\
+} else {
+%<SLibCG_SetBOV(7, 0, 1, 1, "", -1, "", 0, "rtb_sin")>\
+}
+
+%<tlcOutputsFcnOfS1B8>\
+
+%<tlcOutputsFcnOfS1B9>\
+
+rtb_sin = muDoubleScalarCos(rtb_sin * 6.2831853071795862);
+
+%<tlcOutputsFcnOfS1B10>\
+
+if(%<LibIsMajorTimeStep()>) {
+%<SLibCG_SetDWV(8, 0, 1, 1, "", -1, "", 0, "%<SLibCG_SE(SLibCG_BOV(8, 0, 1, 1, "", -1, "", 0))> >= %<SLibCG_SE(SLibCGIR_PV(9, 0, 1, 1, "", -1, "", 0))> ? 1 : %<SLibCG_SE(SLibCG_BOV(8, 0, 1, 1, "", -1, "", 0))> > %<SLibCG_SE(SLibCGIR_PV(10, 0, 1, 1, "", -1, "", 0))> ? 0 : -1")>\
+}
+%<SLibCG_SetBOV(9, 0, 1, 1, "", -1, "", 0, "%<SLibCG_SE(SLibCG_DWV(8, 0, 1, 1, "", -1, "", 0))> == 1 ? %<SLibCG_SE(SLibCGIR_PV(9, 0, 1, 1, "", -1, "", 0))> : %<SLibCG_SE(SLibCG_DWV(8, 0, 1, 1, "", -1, "", 0))> == -1 ? %<SLibCG_SE(SLibCGIR_PV(10, 0, 1, 1, "", -1, "", 0))> : %<SLibCG_SE(SLibCG_BOV(8, 0, 1, 1, "", -1, "", 0))>")>\
+if(%<LibIsSampleHit(1)>) {
+
+if(%<SLibCG_SE(LibIsMajorTimeStep())> && (%<SLibCG_SE(SLibCGIRZCFcn("RISING_ZERO_CROSSING", "%<SLibCG_ZCE(7, 0, 0, 1, 1, -1, "", 0)>", "%<SLibCG_BOV(9, 0, 1, 1, "", -1, "", 0)>", 0))> != NO_ZCEVENT)) {
+
+%<tlcOutputsFcnOfS0B0>\
+%<SLibCG_SetDWV(9, 0, 1, 1, "", -1, "", 0, "4")>\
+}
+
+%<SLibCG_SetBOV(10, 0, 1, 1, "", -1, "", 0, "(%<SLibCG_SE(SLibCGIR_PV(4, 0, 1, 1, "", -1, "", 0))> - %<SLibCG_SE(SLibCGIR_PV(5, 0, 1, 1, "", -1, "", 0))> * %<SLibCG_SE(SLibCG_BOV(16, 0, 1, 2, "", -1, "", 0))>) * %<SLibCG_SE(SLibCG_BOV(16, 0, 1, 2, "", -1, "", 1))>")>\
+
+%<SLibCG_SetBOV(11, 0, 1, 1, "", -1, "", 0, "%<SLibCG_SE(SLibCGIR_PV(11, 0, 1, 1, "", -1, "", 0))> * %<SLibCG_SE(SLibCG_BOV(10, 0, 1, 1, "", -1, "", 0))>")>\
+}
+
+%<tlcOutputsFcnOfS1B12>\
+
+%<tlcOutputsFcnOfS1B13>\
+
+%<tlcOutputsFcnOfS1B14>\
+if(%<LibIsSampleHit(1)>) {
+
+%<SLibCG_SetBOV(14, 0, 1, 1, "", -1, "", 0, "%<SLibCG_SE(SLibCGIR_PV(18, 0, 1, 1, "", -1, "", 0))> * %<SLibCG_SE(SLibCGIR_PV(5, 0, 1, 1, "", -1, "", 0))> + %<SLibCG_SE(SLibCGIR_PV(17, 0, 1, 1, "", -1, "", 0))>")>\
+}
+
+%<SLibCG_SetBOV(15, 0, 1, 1, "", -1, "", 0, "%<SLibCG_SE(SLibCGIR_PV(20, 0, 1, 1, "", -1, "", 0))> * %<SLibCG_SE(SLibCG_BOV(13, 0, 1, 1, "", -1, "", 0))> + %<SLibCG_SE(SLibCGIR_PV(19, 0, 1, 1, "", -1, "", 0))>")>\
+%endfunction

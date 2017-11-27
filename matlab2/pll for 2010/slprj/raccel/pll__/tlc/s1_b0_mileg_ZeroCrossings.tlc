@@ -1,0 +1,17 @@
+%implements s1_b0_mileg_ZeroCrossings "C"
+
+%function ZeroCrossings(block, system) Output
+
+%<SLibCG_ZCSV(0, 0, 0, 1, 1, -1, "", 0)> = %<SLibCG_BOV(0, 0, 1, 1, "", -1, "", 0)>;
+
+%<SLibCG_ZCSV(1, 0, 0, 1, 1, -1, "", 0)> = %<SLibCG_SE(SLibCG_BOV(1, 0, 1, 1, "", -1, "", 0))> - %<SLibCG_SE(SLibCGIR_PV(1, 0, 1, 1, "", -1, "", 0))>;
+
+%<SLibCG_ZCSV(3, 0, 0, 1, 1, -1, "", 0)> = %<SLibCG_BOV(5, 0, 1, 1, "", -1, "", 0)>;
+
+%<SLibCG_ZCSV(4, 0, 0, 1, 1, -1, "", 0)> = %<SLibCG_SE(SLibCG_BOV(6, 0, 1, 1, "", -1, "", 0))> - %<SLibCG_SE(SLibCGIR_PV(7, 0, 1, 1, "", -1, "", 0))>;
+
+%<SLibCG_ZCSV(6, 0, 0, 1, 1, -1, "", 0)> = %<SLibCG_SE(SLibCG_BOV(8, 0, 1, 1, "", -1, "", 0))> - %<SLibCG_SE(SLibCGIR_PV(9, 0, 1, 1, "", -1, "", 0))>;
+%<SLibCG_ZCSV(6, 1, 0, 1, 1, -1, "", 0)> = %<SLibCG_SE(SLibCG_BOV(8, 0, 1, 1, "", -1, "", 0))> - %<SLibCG_SE(SLibCGIR_PV(10, 0, 1, 1, "", -1, "", 0))>;
+
+%<SLibCG_ZCSV(7, 0, 0, 1, 1, -1, "", 0)> = %<SLibCG_BOV(9, 0, 1, 1, "", -1, "", 0)>;
+%endfunction

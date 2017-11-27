@@ -1,0 +1,758 @@
+Model {
+  Name			  "CharFu"
+  Version		  5.0
+  SaveDefaultBlockParams  on
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ExecutionOrder	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  DataTypeOverride	  "UseLocalSettings"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Thu Jan 31 14:04:37 2008"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "efst"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Fri Feb 15 12:20:13 2008"
+  ModelVersionFormat	  "1.%<AutoIncrement:22>"
+  ConfigurationManager	  "None"
+  SimParamPage		  "Solver"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BufferReuse		  on
+  RTWExpressionDepthLimit 5
+  SimulationMode	  "normal"
+  Solver		  "ode23tb"
+  SolverMode		  "Auto"
+  StartTime		  "0.0"
+  StopTime		  "inf"
+  MaxOrder		  5
+  MaxStep		  "1/60000"
+  MinStep		  "1/100000000"
+  MaxNumMinSteps	  "-1"
+  InitialStep		  "auto"
+  FixedStep		  "auto"
+  RelTol		  "1e-6"
+  AbsTol		  "auto"
+  OutputOption		  "RefineOutputTimes"
+  OutputTimes		  "[]"
+  Refine		  "1"
+  LoadExternalInput	  off
+  ExternalInput		  "[t, u]"
+  LoadInitialState	  off
+  InitialState		  "xInitial"
+  SaveTime		  on
+  TimeSaveName		  "tout"
+  SaveState		  off
+  StateSaveName		  "xout"
+  SaveOutput		  on
+  OutputSaveName	  "yout"
+  SaveFinalState	  off
+  FinalStateName	  "xFinal"
+  SaveFormat		  "Array"
+  Decimation		  "1"
+  LimitDataPoints	  on
+  MaxDataPoints		  "1000"
+  SignalLoggingName	  "sigsOut"
+  ConsistencyChecking	  "none"
+  ArrayBoundsChecking	  "none"
+  AlgebraicLoopMsg	  "warning"
+  BlockPriorityViolationMsg "warning"
+  MinStepSizeMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  DiscreteInheritContinuousMsg "warning"
+  MultiTaskRateTransMsg	  "error"
+  SingleTaskRateTransMsg  "none"
+  CheckForMatrixSingularity "none"
+  IntegerOverflowMsg	  "warning"
+  Int32ToFloatConvMsg	  "warning"
+  ParameterDowncastMsg	  "error"
+  ParameterOverflowMsg	  "error"
+  ParameterPrecisionLossMsg "warning"
+  UnderSpecifiedDataTypeMsg "none"
+  UnnecessaryDatatypeConvMsg "none"
+  VectorMatrixConversionMsg "none"
+  InvalidFcnCallConnMsg	  "error"
+  SignalLabelMismatchMsg  "none"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  SfunCompatibilityCheckMsg "none"
+  RTWInlineParameters	  off
+  BlockReductionOpt	  on
+  BooleanDataType	  on
+  ConditionallyExecuteInputs on
+  ParameterPooling	  on
+  OptimizeBlockIOStorage  on
+  ZeroCross		  on
+  AssertionControl	  "UseLocalSettings"
+  ProdHWDeviceType	  "Microprocessor"
+  ProdHWWordLengths	  "8,16,32,32"
+  RTWSystemTargetFile	  "grt.tlc"
+  RTWTemplateMakefile	  "grt_default_tmf"
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  RTWRetainRTWFile	  off
+  TLCProfiler		  off
+  TLCDebug		  off
+  TLCCoverage		  off
+  TLCAssertion		  off
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Abs
+      SaturateOnIntegerOverflow	on
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      ShowAdditionalParam     off
+      OutDataTypeMode	      "Inherit from 'Constant value'"
+      OutDataType	      "sfix(16)"
+      ConRadixGroup	      "Use specified scaling"
+      OutScaling	      "2^0"
+    }
+    Block {
+      BlockType		      Demux
+      Outputs		      "4"
+      DisplayOption	      "none"
+      BusSelectionMode	      off
+    }
+    Block {
+      BlockType		      FrameConversion
+      OutFrame		      "Frame-based"
+    }
+    Block {
+      BlockType		      Fcn
+      Expr		      "sin(u[1])"
+    }
+    Block {
+      BlockType		      Gain
+      Gain		      "1"
+      Multiplication	      "Element-wise(K.*u)"
+      ShowAdditionalParam     off
+      ParameterDataTypeMode   "Same as input"
+      ParameterDataType	      "sfix(16)"
+      ParameterScalingMode    "Best Precision: Matrix-wise"
+      ParameterScaling	      "2^0"
+      OutDataTypeMode	      "Same as input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      InitialCondition
+      Value		      "1"
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      PortDimensions	      "-1"
+      SampleTime	      "-1"
+      ShowAdditionalParam     off
+      LatchInput	      off
+      DataType		      "auto"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Integrator
+      ExternalReset	      "none"
+      InitialConditionSource  "internal"
+      InitialCondition	      "0"
+      LimitOutput	      off
+      UpperSaturationLimit    "inf"
+      LowerSaturationLimit    "-inf"
+      ShowSaturationPort      off
+      ShowStatePort	      off
+      AbsoluteTolerance	      "auto"
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      Math
+      Operator		      "exp"
+      OutputSignalType	      "auto"
+    }
+    Block {
+      BlockType		      MATLABFcn
+      MATLABFcn		      "sin"
+      OutputDimensions	      "-1"
+      OutputSignalType	      "auto"
+      Output1D		      on
+    }
+    Block {
+      BlockType		      Mux
+      Inputs		      "4"
+      DisplayOption	      "none"
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      Product
+      Inputs		      "2"
+      Multiplication	      "Element-wise(.*)"
+      ShowAdditionalParam     off
+      InputSameDT	      on
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      RelationalOperator
+      Operator		      ">="
+      ShowAdditionalParam     off
+      InputSameDT	      on
+      LogicOutDataTypeMode    "Logical (see Advanced Sim. Parameters)"
+      LogicDataType	      "uint(8)"
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      Scope
+      Floating		      off
+      ModelBased	      off
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-5"
+      YMax		      "5"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      LimitDataPoints	      on
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      "S-Function"
+      FunctionName	      "system"
+      PortCounts	      "[]"
+      SFunctionModules	      "''"
+    }
+    Block {
+      BlockType		      Sin
+      SineType		      "Time based"
+      Amplitude		      "1"
+      Bias		      "0"
+      Frequency		      "1"
+      Phase		      "0"
+      Samples		      "10"
+      Offset		      "0"
+      SampleTime	      "-1"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      on
+      Permissions	      "ReadWrite"
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      MinMaxOverflowLogging   "UseLocalSettings"
+    }
+    Block {
+      BlockType		      Sum
+      IconShape		      "rectangular"
+      Inputs		      "++"
+      ShowAdditionalParam     off
+      InputSameDT	      on
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      TriggerPort
+      TriggerType	      "rising"
+      ShowOutputPort	      off
+      OutputDataType	      "auto"
+      ZeroCross		      on
+    }
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "CharFu"
+    Location		    [595, 599, 1569, 1043]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      Constant
+      Name		      "Constant"
+      Position		      [45, 350, 75, 380]
+      Value		      "1000"
+    }
+    Block {
+      BlockType		      Demux
+      Name		      "Demux"
+      Ports		      [1, 3]
+      Position		      [725, 311, 730, 349]
+      BackgroundColor	      "black"
+      ShowName		      off
+      Outputs		      "3"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "FET DSP"
+      Ports		      [4, 1, 0, 1]
+      Position		      [545, 219, 645, 301]
+      TreatAsAtomicUnit	      on
+      System {
+	Name			"FET DSP"
+	Location		[295, 477, 937, 755]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "In1"
+	  Position		  [110, 83, 140, 97]
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Fin"
+	  Position		  [110, 118, 140, 132]
+	  Port			  "2"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Fs"
+	  Position		  [110, 153, 140, 167]
+	  Port			  "3"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Gain"
+	  Position		  [110, 188, 140, 202]
+	  Port			  "4"
+	}
+	Block {
+	  BlockType		  TriggerPort
+	  Name			  "Trigger"
+	  Ports			  []
+	  Position		  [225, 20, 245, 40]
+	}
+	Block {
+	  BlockType		  MATLABFcn
+	  Name			  "MATLAB Fcn"
+	  Position		  [310, 130, 370, 160]
+	  MATLABFcn		  "RFSchar2(u(1),u(2),u(3),u(4))"
+	  OutputDimensions	  "3"
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux"
+	  Ports			  [4, 1]
+	  Position		  [260, 73, 265, 212]
+	  ShowName		  off
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out1"
+	  Position		  [420, 138, 450, 152]
+	}
+	Line {
+	  SrcBlock		  "Fin"
+	  SrcPort		  1
+	  DstBlock		  "Mux"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Mux"
+	  SrcPort		  1
+	  DstBlock		  "MATLAB Fcn"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "In1"
+	  SrcPort		  1
+	  DstBlock		  "Mux"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "MATLAB Fcn"
+	  SrcPort		  1
+	  DstBlock		  "Out1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Fs"
+	  SrcPort		  1
+	  DstBlock		  "Mux"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Gain"
+	  SrcPort		  1
+	  DstBlock		  "Mux"
+	  DstPort		  4
+	}
+      }
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Fs"
+      Position		      [375, 255, 405, 285]
+      Value		      "1000"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Gain"
+      Position		      [415, 300, 445, 330]
+    }
+    Block {
+      BlockType		      Product
+      Name		      "Product"
+      Ports		      [2, 1]
+      Position		      [115, 216, 160, 249]
+      InputSameDT	      off
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Scope"
+      Ports		      [1]
+      Position		      [725, 374, 755, 406]
+      Location		      [926, 92, 1341, 421]
+      Open		      on
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+      }
+      TimeRange		      "0.3333333333333333"
+      YMin		      "0"
+      YMax		      "2000"
+      DataFormat	      "StructureWithTime"
+    }
+    Block {
+      BlockType		      Sin
+      Name		      "Sine Wave"
+      Position		      [15, 195, 45, 225]
+      SineType		      "Time based"
+      Frequency		      "50"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum"
+      Ports		      [2, 1]
+      Position		      [205, 215, 225, 235]
+      ShowName		      off
+      IconShape		      "round"
+      Inputs		      "|++"
+      InputSameDT	      off
+      OutDataTypeMode	      "Inherit via internal rule"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Voltage-Controlled\nOscillator1"
+      Ports		      [1, 1]
+      Position		      [520, 149, 575, 181]
+      FontName		      "Arial"
+      SourceBlock	      "commcontsrc2/Voltage-Controlled\nOscillator"
+      SourceType	      "Voltage-Controlled Oscillator"
+      Ac		      "1"
+      Fc		      "0"
+      Kc		      "1"
+      Ph		      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Voltage-Controlled\nOscillator2"
+      Ports		      [1, 1]
+      Position		      [285, 204, 340, 236]
+      FontName		      "Arial"
+      SourceBlock	      "commcontsrc2/Voltage-Controlled\nOscillator"
+      SourceType	      "Voltage-Controlled Oscillator"
+      Ac		      "1"
+      Fc		      "0"
+      Kc		      "1"
+      Ph		      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "XY Graph"
+      Ports		      [2]
+      Position		      [850, 235, 880, 270]
+      SourceBlock	      "simulink/Sinks/XY Graph"
+      SourceType	      "XY scope."
+      xmin		      "0"
+      xmax		      "3000"
+      ymin		      "-20"
+      ymax		      "2000"
+      st		      "-1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "XY Graph1"
+      Ports		      [2]
+      Position		      [855, 285, 885, 320]
+      SourceBlock	      "simulink/Sinks/XY Graph"
+      SourceType	      "XY scope."
+      xmin		      "0"
+      xmax		      "3000"
+      ymin		      "-20"
+      ymax		      "2000"
+      st		      "-1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "XY Graph2"
+      Ports		      [2]
+      Position		      [855, 340, 885, 375]
+      SourceBlock	      "simulink/Sinks/XY Graph"
+      SourceType	      "XY scope."
+      xmin		      "0"
+      xmax		      "3000"
+      ymin		      "-20"
+      ymax		      "2000"
+      st		      "-1"
+    }
+    Line {
+      SrcBlock		      "Fs"
+      SrcPort		      1
+      Points		      [0, 0; 75, 0]
+      Branch {
+	DstBlock		"FET DSP"
+	DstPort			3
+      }
+      Branch {
+	Points			[0, -105]
+	DstBlock		"Voltage-Controlled\nOscillator1"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Gain"
+      SrcPort		      1
+      Points		      [10, 0; 0, -25]
+      DstBlock		      "FET DSP"
+      DstPort		      4
+    }
+    Line {
+      SrcBlock		      "Voltage-Controlled\nOscillator1"
+      SrcPort		      1
+      Points		      [15, 0]
+      DstBlock		      "FET DSP"
+      DstPort		      trigger
+    }
+    Line {
+      SrcBlock		      "Sum"
+      SrcPort		      1
+      Points		      [0, -5; 15, 0]
+      Branch {
+	DstBlock		"Voltage-Controlled\nOscillator2"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -110; 190, 0]
+	Branch {
+	  Points		  [0, 140]
+	  DstBlock		  "FET DSP"
+	  DstPort		  2
+	}
+	Branch {
+	  Points		  [260, 0; 0, 135; 120, 0]
+	  Branch {
+	    DstBlock		    "XY Graph"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 50]
+	    Branch {
+	      DstBlock		      "XY Graph1"
+	      DstPort		      1
+	    }
+	    Branch {
+	      Points		      [0, 55]
+	      DstBlock		      "XY Graph2"
+	      DstPort		      1
+	    }
+	  }
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "Voltage-Controlled\nOscillator2"
+      SrcPort		      1
+      Points		      [185, 0]
+      DstBlock		      "FET DSP"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Sine Wave"
+      SrcPort		      1
+      DstBlock		      "Product"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Product"
+      SrcPort		      1
+      Points		      [10, 0; 0, -10]
+      DstBlock		      "Sum"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Constant"
+      SrcPort		      1
+      Points		      [10, 0]
+      Branch {
+	Points			[0, -125]
+	DstBlock		"Product"
+	DstPort			2
+      }
+      Branch {
+	DstBlock		"Sum"
+	DstPort			2
+      }
+    }
+    Line {
+      SrcBlock		      "Demux"
+      SrcPort		      1
+      Points		      [100, 0]
+      DstBlock		      "XY Graph"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Demux"
+      SrcPort		      2
+      Points		      [105, 0]
+      DstBlock		      "XY Graph1"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Demux"
+      SrcPort		      3
+      Points		      [50, 0; 0, 25]
+      DstBlock		      "XY Graph2"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "FET DSP"
+      SrcPort		      1
+      Points		      [30, 0; 0, 70]
+      Branch {
+	DstBlock		"Demux"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 60]
+	DstBlock		"Scope"
+	DstPort			1
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+** Profile: "SCHEMATIC1-low pass filters"  [ D:\ORCAD\WORKS DIPLOMATIKHS\lag filter-schematic1-low pass filters.sim ] 
+
+** Creating circuit file "lag filter-schematic1-low pass filters.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of d:\ORCAD\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 10 10 1000k
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\lag filter-SCHEMATIC1.net" 
+
+
+.END

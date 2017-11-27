@@ -1,0 +1,1095 @@
+Model {
+  Name			  "fu01"
+  Version		  5.0
+  SaveDefaultBlockParams  on
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ExecutionOrder	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  DataTypeOverride	  "UseLocalSettings"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Thu Jan 31 14:04:37 2008"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "efst"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Wed Mar 11 12:05:06 2009"
+  ModelVersionFormat	  "1.%<AutoIncrement:4>"
+  ConfigurationManager	  "None"
+  SimParamPage		  "Solver"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BufferReuse		  on
+  RTWExpressionDepthLimit 5
+  SimulationMode	  "normal"
+  Solver		  "ode45"
+  SolverMode		  "Auto"
+  StartTime		  "0.0"
+  StopTime		  "inf"
+  MaxOrder		  5
+  MaxStep		  "1/5000"
+  MinStep		  "1/100000000"
+  MaxNumMinSteps	  "-1"
+  InitialStep		  "auto"
+  FixedStep		  "auto"
+  RelTol		  "1e-6"
+  AbsTol		  "auto"
+  OutputOption		  "RefineOutputTimes"
+  OutputTimes		  "[]"
+  Refine		  "1"
+  LoadExternalInput	  off
+  ExternalInput		  "[t, u]"
+  LoadInitialState	  off
+  InitialState		  "xInitial"
+  SaveTime		  on
+  TimeSaveName		  "tout"
+  SaveState		  off
+  StateSaveName		  "xout"
+  SaveOutput		  on
+  OutputSaveName	  "yout"
+  SaveFinalState	  off
+  FinalStateName	  "xFinal"
+  SaveFormat		  "Array"
+  Decimation		  "1"
+  LimitDataPoints	  on
+  MaxDataPoints		  "1000"
+  SignalLoggingName	  "sigsOut"
+  ConsistencyChecking	  "none"
+  ArrayBoundsChecking	  "none"
+  AlgebraicLoopMsg	  "warning"
+  BlockPriorityViolationMsg "warning"
+  MinStepSizeMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  DiscreteInheritContinuousMsg "warning"
+  MultiTaskRateTransMsg	  "error"
+  SingleTaskRateTransMsg  "none"
+  CheckForMatrixSingularity "none"
+  IntegerOverflowMsg	  "warning"
+  Int32ToFloatConvMsg	  "warning"
+  ParameterDowncastMsg	  "error"
+  ParameterOverflowMsg	  "error"
+  ParameterPrecisionLossMsg "warning"
+  UnderSpecifiedDataTypeMsg "none"
+  UnnecessaryDatatypeConvMsg "none"
+  VectorMatrixConversionMsg "none"
+  InvalidFcnCallConnMsg	  "error"
+  SignalLabelMismatchMsg  "none"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  SfunCompatibilityCheckMsg "none"
+  RTWInlineParameters	  off
+  BlockReductionOpt	  on
+  BooleanDataType	  on
+  ConditionallyExecuteInputs on
+  ParameterPooling	  on
+  OptimizeBlockIOStorage  on
+  ZeroCross		  on
+  AssertionControl	  "UseLocalSettings"
+  ProdHWDeviceType	  "Microprocessor"
+  ProdHWWordLengths	  "8,16,32,32"
+  RTWSystemTargetFile	  "grt.tlc"
+  RTWTemplateMakefile	  "grt_default_tmf"
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  RTWRetainRTWFile	  off
+  TLCProfiler		  off
+  TLCDebug		  off
+  TLCCoverage		  off
+  TLCAssertion		  off
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Abs
+      SaturateOnIntegerOverflow	on
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      ShowAdditionalParam     off
+      OutDataTypeMode	      "Inherit from 'Constant value'"
+      OutDataType	      "sfix(16)"
+      ConRadixGroup	      "Use specified scaling"
+      OutScaling	      "2^0"
+    }
+    Block {
+      BlockType		      Display
+      Format		      "short"
+      Decimation	      "10"
+      Floating		      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      FrameConversion
+      OutFrame		      "Frame-based"
+    }
+    Block {
+      BlockType		      Fcn
+      Expr		      "sin(u[1])"
+    }
+    Block {
+      BlockType		      Gain
+      Gain		      "1"
+      Multiplication	      "Element-wise(K.*u)"
+      ShowAdditionalParam     off
+      ParameterDataTypeMode   "Same as input"
+      ParameterDataType	      "sfix(16)"
+      ParameterScalingMode    "Best Precision: Matrix-wise"
+      ParameterScaling	      "2^0"
+      OutDataTypeMode	      "Same as input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      InitialCondition
+      Value		      "1"
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      PortDimensions	      "-1"
+      SampleTime	      "-1"
+      ShowAdditionalParam     off
+      LatchInput	      off
+      DataType		      "auto"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Integrator
+      ExternalReset	      "none"
+      InitialConditionSource  "internal"
+      InitialCondition	      "0"
+      LimitOutput	      off
+      UpperSaturationLimit    "inf"
+      LowerSaturationLimit    "-inf"
+      ShowSaturationPort      off
+      ShowStatePort	      off
+      AbsoluteTolerance	      "auto"
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      Math
+      Operator		      "exp"
+      OutputSignalType	      "auto"
+    }
+    Block {
+      BlockType		      Mux
+      Inputs		      "4"
+      DisplayOption	      "none"
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      RelationalOperator
+      Operator		      ">="
+      ShowAdditionalParam     off
+      InputSameDT	      on
+      LogicOutDataTypeMode    "Logical (see Advanced Sim. Parameters)"
+      LogicDataType	      "uint(8)"
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      Scope
+      Floating		      off
+      ModelBased	      off
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-5"
+      YMax		      "5"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      LimitDataPoints	      on
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      "S-Function"
+      FunctionName	      "system"
+      PortCounts	      "[]"
+      SFunctionModules	      "''"
+    }
+    Block {
+      BlockType		      Sin
+      SineType		      "Time based"
+      Amplitude		      "1"
+      Bias		      "0"
+      Frequency		      "1"
+      Phase		      "0"
+      Samples		      "10"
+      Offset		      "0"
+      SampleTime	      "-1"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      on
+      Permissions	      "ReadWrite"
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      MinMaxOverflowLogging   "UseLocalSettings"
+    }
+    Block {
+      BlockType		      Sum
+      IconShape		      "rectangular"
+      Inputs		      "++"
+      ShowAdditionalParam     off
+      InputSameDT	      on
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      TriggerPort
+      TriggerType	      "rising"
+      ShowOutputPort	      off
+      OutputDataType	      "auto"
+      ZeroCross		      on
+    }
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "fu01"
+    Location		    [636, 339, 1559, 775]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      Constant
+      Name		      "Constant"
+      Position		      [375, 270, 405, 300]
+      Value		      "200"
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display"
+      Ports		      [1]
+      Position		      [435, 80, 525, 110]
+      Decimation	      "1"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "FET"
+      Ports		      [2, 1]
+      Position		      [315, 195, 355, 255]
+      TreatAsAtomicUnit	      off
+      System {
+	Name			"FET"
+	Location		[716, 439, 1306, 687]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "In1"
+	  Position		  [25, 23, 55, 37]
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "In2"
+	  Position		  [50, 98, 80, 112]
+	  Port			  "2"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "Fcn"
+	  Position		  [450, 125, 510, 155]
+	  Expr			  "(1000/(2*pi))*acos( (u(1)+u(3)) / (2*u(2)) "
+")"
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux"
+	  Ports			  [3, 1]
+	  Position		  [415, 108, 420, 172]
+	  ShowName		  off
+	  Inputs		  "3"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  Scope
+	  Name			  "Scope"
+	  Ports			  [3]
+	  Position		  [410, 189, 440, 221]
+	  Location		  [188, 365, 605, 800]
+	  Open			  on
+	  NumInputPorts		  "3"
+	  List {
+	    ListType		    AxesTitles
+	    axes1		    "%<SignalLabel>"
+	    axes2		    "%<SignalLabel>"
+	    axes3		    "%<SignalLabel>"
+	  }
+	  List {
+	    ListType		    SelectedSignals
+	    axes1		    ""
+	    axes2		    ""
+	    axes3		    ""
+	  }
+	  TimeRange		  "0.02"
+	  YMin			  "-1~-1~-1"
+	  YMax			  "1~1~1"
+	  DataFormat		  "StructureWithTime"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Subsystem"
+	  Ports			  [2, 1]
+	  Position		  [105, 60, 145, 120]
+	  TreatAsAtomicUnit	  off
+	  System {
+	    Name		    "Subsystem"
+	    Location		    [696, 484, 1117, 638]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Sample"
+	      Position		      [20, 15, 50, 30]
+	      Orientation	      "down"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In"
+	      Position		      [25, 78, 55, 92]
+	      Port		      "2"
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Triggered\nSubsystem"
+	      Ports		      [1, 1, 0, 1]
+	      Position		      [80, 64, 180, 106]
+	      TreatAsAtomicUnit	      on
+	      System {
+		Name			"Triggered\nSubsystem"
+		Location		[401, 346, 899, 646]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "In1"
+		  Position		  [110, 103, 140, 117]
+		}
+		Block {
+		  BlockType		  TriggerPort
+		  Name			  "Trigger"
+		  Ports			  []
+		  Position		  [225, 20, 245, 40]
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Out1"
+		  Position		  [360, 103, 390, 117]
+		}
+		Line {
+		  SrcBlock		  "In1"
+		  SrcPort		  1
+		  DstBlock		  "Out1"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Triggered\nSubsystem1"
+	      Ports		      [1, 1, 0, 1]
+	      Position		      [220, 64, 320, 106]
+	      TreatAsAtomicUnit	      on
+	      System {
+		Name			"Triggered\nSubsystem1"
+		Location		[401, 346, 899, 646]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "In1"
+		  Position		  [110, 103, 140, 117]
+		}
+		Block {
+		  BlockType		  TriggerPort
+		  Name			  "Trigger"
+		  Ports			  []
+		  Position		  [225, 20, 245, 40]
+		  TriggerType		  "falling"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Out1"
+		  Position		  [360, 103, 390, 117]
+		}
+		Line {
+		  SrcBlock		  "In1"
+		  SrcPort		  1
+		  DstBlock		  "Out1"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Out"
+	      Position		      [345, 78, 375, 92]
+	    }
+	    Line {
+	      SrcBlock		      "Triggered\nSubsystem"
+	      SrcPort		      1
+	      DstBlock		      "Triggered\nSubsystem1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Sample"
+	      SrcPort		      1
+	      Points		      [95, 0]
+	      Branch {
+		Points			[140, 0]
+		DstBlock		"Triggered\nSubsystem1"
+		DstPort			trigger
+	      }
+	      Branch {
+		DstBlock		"Triggered\nSubsystem"
+		DstPort			trigger
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "In"
+	      SrcPort		      1
+	      DstBlock		      "Triggered\nSubsystem"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Triggered\nSubsystem1"
+	      SrcPort		      1
+	      DstBlock		      "Out"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Subsystem1"
+	  Ports			  [2, 1]
+	  Position		  [200, 60, 240, 120]
+	  TreatAsAtomicUnit	  off
+	  System {
+	    Name		    "Subsystem1"
+	    Location		    [696, 484, 1117, 638]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Sample"
+	      Position		      [20, 15, 50, 30]
+	      Orientation	      "down"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In"
+	      Position		      [25, 78, 55, 92]
+	      Port		      "2"
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Triggered\nSubsystem"
+	      Ports		      [1, 1, 0, 1]
+	      Position		      [80, 64, 180, 106]
+	      TreatAsAtomicUnit	      on
+	      System {
+		Name			"Triggered\nSubsystem"
+		Location		[401, 346, 899, 646]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "In1"
+		  Position		  [110, 103, 140, 117]
+		}
+		Block {
+		  BlockType		  TriggerPort
+		  Name			  "Trigger"
+		  Ports			  []
+		  Position		  [225, 20, 245, 40]
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Out1"
+		  Position		  [360, 103, 390, 117]
+		}
+		Line {
+		  SrcBlock		  "In1"
+		  SrcPort		  1
+		  DstBlock		  "Out1"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Triggered\nSubsystem1"
+	      Ports		      [1, 1, 0, 1]
+	      Position		      [220, 64, 320, 106]
+	      TreatAsAtomicUnit	      on
+	      System {
+		Name			"Triggered\nSubsystem1"
+		Location		[401, 346, 899, 646]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "In1"
+		  Position		  [110, 103, 140, 117]
+		}
+		Block {
+		  BlockType		  TriggerPort
+		  Name			  "Trigger"
+		  Ports			  []
+		  Position		  [225, 20, 245, 40]
+		  TriggerType		  "falling"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Out1"
+		  Position		  [360, 103, 390, 117]
+		}
+		Line {
+		  SrcBlock		  "In1"
+		  SrcPort		  1
+		  DstBlock		  "Out1"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Out"
+	      Position		      [345, 78, 375, 92]
+	    }
+	    Line {
+	      SrcBlock		      "Triggered\nSubsystem1"
+	      SrcPort		      1
+	      DstBlock		      "Out"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "In"
+	      SrcPort		      1
+	      DstBlock		      "Triggered\nSubsystem"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Sample"
+	      SrcPort		      1
+	      Points		      [95, 0]
+	      Branch {
+		DstBlock		"Triggered\nSubsystem"
+		DstPort			trigger
+	      }
+	      Branch {
+		Points			[140, 0]
+		DstBlock		"Triggered\nSubsystem1"
+		DstPort			trigger
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Triggered\nSubsystem"
+	      SrcPort		      1
+	      DstBlock		      "Triggered\nSubsystem1"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Subsystem2"
+	  Ports			  [2, 1]
+	  Position		  [295, 60, 335, 120]
+	  TreatAsAtomicUnit	  off
+	  System {
+	    Name		    "Subsystem2"
+	    Location		    [696, 484, 1117, 638]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Sample"
+	      Position		      [20, 15, 50, 30]
+	      Orientation	      "down"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In"
+	      Position		      [25, 78, 55, 92]
+	      Port		      "2"
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Triggered\nSubsystem"
+	      Ports		      [1, 1, 0, 1]
+	      Position		      [80, 64, 180, 106]
+	      TreatAsAtomicUnit	      on
+	      System {
+		Name			"Triggered\nSubsystem"
+		Location		[401, 346, 899, 646]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "In1"
+		  Position		  [110, 103, 140, 117]
+		}
+		Block {
+		  BlockType		  TriggerPort
+		  Name			  "Trigger"
+		  Ports			  []
+		  Position		  [225, 20, 245, 40]
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Out1"
+		  Position		  [360, 103, 390, 117]
+		}
+		Line {
+		  SrcBlock		  "In1"
+		  SrcPort		  1
+		  DstBlock		  "Out1"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Triggered\nSubsystem1"
+	      Ports		      [1, 1, 0, 1]
+	      Position		      [220, 64, 320, 106]
+	      TreatAsAtomicUnit	      on
+	      System {
+		Name			"Triggered\nSubsystem1"
+		Location		[401, 346, 899, 646]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "In1"
+		  Position		  [110, 103, 140, 117]
+		}
+		Block {
+		  BlockType		  TriggerPort
+		  Name			  "Trigger"
+		  Ports			  []
+		  Position		  [225, 20, 245, 40]
+		  TriggerType		  "falling"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Out1"
+		  Position		  [360, 103, 390, 117]
+		}
+		Line {
+		  SrcBlock		  "In1"
+		  SrcPort		  1
+		  DstBlock		  "Out1"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Out"
+	      Position		      [345, 78, 375, 92]
+	    }
+	    Line {
+	      SrcBlock		      "Triggered\nSubsystem"
+	      SrcPort		      1
+	      DstBlock		      "Triggered\nSubsystem1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Sample"
+	      SrcPort		      1
+	      Points		      [95, 0]
+	      Branch {
+		Points			[140, 0]
+		DstBlock		"Triggered\nSubsystem1"
+		DstPort			trigger
+	      }
+	      Branch {
+		DstBlock		"Triggered\nSubsystem"
+		DstPort			trigger
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "In"
+	      SrcPort		      1
+	      DstBlock		      "Triggered\nSubsystem"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Triggered\nSubsystem1"
+	      SrcPort		      1
+	      DstBlock		      "Out"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out1"
+	  Position		  [535, 133, 565, 147]
+	}
+	Line {
+	  SrcBlock		  "In1"
+	  SrcPort		  1
+	  Points		  [0, 0; 15, 0]
+	  Branch {
+	    Points		    [0, 45]
+	    DstBlock		    "Subsystem"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [95, 0]
+	    Branch {
+	      Points		      [0, 45]
+	      DstBlock		      "Subsystem1"
+	      DstPort		      1
+	    }
+	    Branch {
+	      Points		      [100, 0; 0, 45]
+	      DstBlock		      "Subsystem2"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Line {
+	  SrcBlock		  "Mux"
+	  SrcPort		  1
+	  DstBlock		  "Fcn"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Subsystem2"
+	  SrcPort		  1
+	  Points		  [25, 0; 0, 30; 20, 0]
+	  Branch {
+	    DstBlock		    "Mux"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 75]
+	    DstBlock		    "Scope"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Subsystem1"
+	  SrcPort		  1
+	  Points		  [15, 0; 0, 15]
+	  Branch {
+	    DstBlock		    "Subsystem2"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [0, 35; 110, 0]
+	    Branch {
+	      DstBlock		      "Mux"
+	      DstPort		      2
+	    }
+	    Branch {
+	      Points		      [0, 65]
+	      DstBlock		      "Scope"
+	      DstPort		      2
+	    }
+	  }
+	}
+	Line {
+	  SrcBlock		  "Subsystem"
+	  SrcPort		  1
+	  Points		  [15, 0; 0, 15]
+	  Branch {
+	    DstBlock		    "Subsystem1"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [0, 55; 180, 0]
+	    Branch {
+	      DstBlock		      "Mux"
+	      DstPort		      3
+	    }
+	    Branch {
+	      Points		      [0, 55]
+	      DstBlock		      "Scope"
+	      DstPort		      3
+	    }
+	  }
+	}
+	Line {
+	  SrcBlock		  "In2"
+	  SrcPort		  1
+	  DstBlock		  "Subsystem"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Fcn"
+	  SrcPort		  1
+	  DstBlock		  "Out1"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      Integrator
+      Name		      "Integrator"
+      Ports		      [1, 1]
+      Position		      [510, 210, 540, 240]
+    }
+    Block {
+      BlockType		      Sin
+      Name		      "Sampling"
+      Position		      [165, 195, 195, 225]
+      SineType		      "Time based"
+      Frequency		      "2*pi*1000"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum"
+      Ports		      [2, 1]
+      Position		      [425, 215, 445, 235]
+      ShowName		      off
+      IconShape		      "round"
+      Inputs		      "|-+"
+      InputSameDT	      off
+      OutDataTypeMode	      "Inherit via internal rule"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Voltage-Controlled\nOscillator"
+      Ports		      [1, 1]
+      Position		      [565, 203, 645, 247]
+      FontName		      "Arial"
+      SourceBlock	      "commcontsrc2/Voltage-Controlled\nOscillator"
+      SourceType	      "Voltage-Controlled Oscillator"
+      Ac		      "1"
+      Fc		      "10"
+      Kc		      "100"
+      Ph		      "0"
+    }
+    Line {
+      SrcBlock		      "FET"
+      SrcPort		      1
+      Points		      [25, 0]
+      Branch {
+	Points			[0, -130]
+	DstBlock		"Display"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"Sum"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Sampling"
+      SrcPort		      1
+      DstBlock		      "FET"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Integrator"
+      SrcPort		      1
+      DstBlock		      "Voltage-Controlled\nOscillator"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Voltage-Controlled\nOscillator"
+      SrcPort		      1
+      Points		      [50, 0; 0, 145; -420, 0; 0, -130]
+      DstBlock		      "FET"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Sum"
+      SrcPort		      1
+      DstBlock		      "Integrator"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Constant"
+      SrcPort		      1
+      Points		      [25, 0]
+      DstBlock		      "Sum"
+      DstPort		      2
+    }
+  }
+}

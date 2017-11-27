@@ -1,0 +1,16 @@
+%implements s1_b0_mileg_Derivatives "C"
+
+%function Derivatives(block, system) Output
+%assign tlcDerivativesFcnOfS1B1 = OpaqueTLCBlockFcn("Derivatives", 1, 1)
+%assign tlcDerivativesFcnOfS1B8 = OpaqueTLCBlockFcn("Derivatives", 1, 8)
+%assign tlcDerivativesFcnOfS1B12 = OpaqueTLCBlockFcn("Derivatives", 1, 12)
+%assign tlcDerivativesFcnOfS1B13 = OpaqueTLCBlockFcn("Derivatives", 1, 13)
+
+%<tlcDerivativesFcnOfS1B1>\
+
+%<tlcDerivativesFcnOfS1B8>\
+
+%<tlcDerivativesFcnOfS1B12>\
+
+%<tlcDerivativesFcnOfS1B13>\
+%endfunction

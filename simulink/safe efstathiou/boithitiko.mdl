@@ -1,0 +1,495 @@
+Model {
+  Name			  "boithitiko"
+  Version		  5.0
+  SaveDefaultBlockParams  on
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ExecutionOrder	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  DataTypeOverride	  "UseLocalSettings"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  CloseFcn		  "rtwprivate ssgencode ModelCloseRequest boithitiko"
+  Created		  "Wed Mar 18 14:39:21 2009"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "efst"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Thu Mar 26 12:02:49 2009"
+  ModelVersionFormat	  "1.%<AutoIncrement:54>"
+  ConfigurationManager	  "None"
+  SimParamPage		  "Solver"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BufferReuse		  on
+  RTWExpressionDepthLimit 5
+  SimulationMode	  "normal"
+  Solver		  "FixedStepDiscrete"
+  SolverMode		  "Auto"
+  StartTime		  "0.0"
+  StopTime		  "inf"
+  MaxOrder		  5
+  MaxStep		  "auto"
+  MinStep		  "auto"
+  MaxNumMinSteps	  "-1"
+  InitialStep		  "auto"
+  FixedStep		  "auto"
+  RelTol		  "1e-3"
+  AbsTol		  "auto"
+  OutputOption		  "RefineOutputTimes"
+  OutputTimes		  "[]"
+  Refine		  "1"
+  LoadExternalInput	  off
+  ExternalInput		  "[t, u]"
+  LoadInitialState	  off
+  InitialState		  "xInitial"
+  SaveTime		  on
+  TimeSaveName		  "tout"
+  SaveState		  off
+  StateSaveName		  "xout"
+  SaveOutput		  on
+  OutputSaveName	  "yout"
+  SaveFinalState	  off
+  FinalStateName	  "xFinal"
+  SaveFormat		  "Array"
+  Decimation		  "1"
+  LimitDataPoints	  on
+  MaxDataPoints		  "1000"
+  SignalLoggingName	  "sigsOut"
+  ConsistencyChecking	  "none"
+  ArrayBoundsChecking	  "none"
+  AlgebraicLoopMsg	  "warning"
+  BlockPriorityViolationMsg "warning"
+  MinStepSizeMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  DiscreteInheritContinuousMsg "warning"
+  MultiTaskRateTransMsg	  "error"
+  SingleTaskRateTransMsg  "none"
+  CheckForMatrixSingularity "none"
+  IntegerOverflowMsg	  "warning"
+  Int32ToFloatConvMsg	  "warning"
+  ParameterDowncastMsg	  "error"
+  ParameterOverflowMsg	  "error"
+  ParameterPrecisionLossMsg "warning"
+  UnderSpecifiedDataTypeMsg "none"
+  UnnecessaryDatatypeConvMsg "none"
+  VectorMatrixConversionMsg "none"
+  InvalidFcnCallConnMsg	  "error"
+  SignalLabelMismatchMsg  "none"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  SfunCompatibilityCheckMsg "none"
+  RTWInlineParameters	  off
+  BlockReductionOpt	  on
+  BooleanDataType	  on
+  ConditionallyExecuteInputs on
+  ParameterPooling	  on
+  OptimizeBlockIOStorage  on
+  ZeroCross		  on
+  AssertionControl	  "UseLocalSettings"
+  ProdHWDeviceType	  "Microprocessor"
+  ProdHWWordLengths	  "8,16,32,32"
+  RTWSystemTargetFile	  "grt.tlc"
+  RTWTemplateMakefile	  "grt_default_tmf"
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  RTWRetainRTWFile	  off
+  TLCProfiler		  off
+  TLCDebug		  off
+  TLCCoverage		  off
+  TLCAssertion		  off
+  RTWOptions		  "-aEnforceIntegerDowncast=1 -aExtMode=0 -aExtModeTes"
+"ting=0 -aFoldNonRolledExpr=1 -aForceParamTrailComments=0 -aGenerateComments=1"
+" -aGenerateReport=0 -aIgnoreCustomStorageClasses=1 -aIncDataTypeInIds=0 -aInc"
+"HierarchyInIds=0 -aInlineInvariantSignals=0 -aInlinedPrmAccess=\"Literals\" -"
+"aLocalBlockOutputs=1 -aLogVarNameModifier=\"rt_\" -aMaxRTWIdLen=31 -aPrefixMo"
+"delToSubsysFcnNames=1 -aRTWVerbose=1 -aRollThreshold=5 -aShowEliminatedStatem"
+"ents=0"
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      DiscretePulseGenerator
+      PulseType		      "Sample based"
+      Amplitude		      "1"
+      Period		      "2"
+      PulseWidth	      "1"
+      PhaseDelay	      "0"
+      SampleTime	      "1"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      Display
+      Format		      "short"
+      Decimation	      "10"
+      Floating		      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Scope
+      Floating		      off
+      ModelBased	      off
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-5"
+      YMax		      "5"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      LimitDataPoints	      on
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      "S-Function"
+      FunctionName	      "system"
+      PortCounts	      "[]"
+      SFunctionModules	      "''"
+    }
+    Block {
+      BlockType		      SignalGenerator
+      WaveForm		      "sine"
+      Amplitude		      "1"
+      Frequency		      "1"
+      Units		      "Hertz"
+      VectorParams1D	      on
+    }
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "boithitiko"
+    Location		    [391, 194, 1659, 1090]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      Reference
+      Name		      "ADC"
+      Ports		      [1, 1]
+      Position		      [300, 379, 370, 421]
+      SourceBlock	      "dspquant2/Uniform\nEncoder"
+      SourceType	      "Uniform Encoder"
+      peak		      "1"
+      bits		      "8"
+      otype		      "Unsigned integer"
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display output of queue"
+      Ports		      [1]
+      Position		      [665, 300, 755, 330]
+      Decimation	      "1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Queue"
+      Ports		      [3, 1]
+      Position		      [485, 369, 580, 451]
+      SourceBlock	      "dspbuff3/Queue"
+      SourceType	      "Queue"
+      depth		      "3"
+      trigger		      "Rising edge"
+      overflow		      "Dynamic reallocation"
+      pes		      "Warning"
+      eso		      off
+      fso		      off
+      nso		      off
+      clr		      off
+      clrOutport	      off
+    }
+    Block {
+      BlockType		      SignalGenerator
+      Name		      "Signal\nGenerator"
+      Position		      [185, 395, 215, 425]
+      Frequency		      "1000"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "analog sine"
+      Ports		      [1]
+      Position		      [305, 284, 335, 316]
+      Location		      [36, 327, 1257, 752]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+      }
+      YMin		      "-1"
+      YMax		      "1"
+      DataFormat	      "StructureWithTime"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "digital sine"
+      Ports		      [1]
+      Position		      [500, 289, 530, 321]
+      Location		      [496, 184, 1776, 1121]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+      }
+      TimeRange		      "0.001"
+      YMin		      "0"
+      YMax		      "275"
+      SaveName		      "ScopeData1"
+      DataFormat	      "StructureWithTime"
+    }
+    Block {
+      BlockType		      Display
+      Name		      "digital values of ADC"
+      Ports		      [1]
+      Position		      [405, 205, 510, 245]
+      Decimation	      "1"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "out queue scope"
+      Ports		      [1]
+      Position		      [675, 464, 705, 496]
+      Location		      [570, 521, 1394, 1002]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+      }
+      TimeRange		      "0.01"
+      YMin		      "0"
+      YMax		      "275"
+      SaveName		      "ScopeData5"
+      DataFormat	      "StructureWithTime"
+    }
+    Block {
+      BlockType		      DiscretePulseGenerator
+      Name		      "pop clock\n"
+      Position		      [395, 548, 440, 582]
+      PulseType		      "Time based"
+      Period		      "10^(-4)"
+      PulseWidth	      "50"
+      PhaseDelay	      "(10^(-6))/4"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "pop scope clock"
+      Ports		      [1]
+      Position		      [470, 549, 500, 581]
+      Location		      [684, 103, 1169, 383]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+      }
+      SaveName		      "ScopeData3"
+      DataFormat	      "StructureWithTime"
+    }
+    Block {
+      BlockType		      DiscretePulseGenerator
+      Name		      "push clock"
+      Position		      [295, 473, 340, 507]
+      PulseType		      "Time based"
+      Period		      "10^(-4)"
+      PulseWidth	      "50"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "push scope clock"
+      Ports		      [1]
+      Position		      [400, 474, 430, 506]
+      Location		      [12, 377, 903, 745]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+      }
+      SaveName		      "ScopeData2"
+      DataFormat	      "StructureWithTime"
+    }
+    Line {
+      SrcBlock		      "Signal\nGenerator"
+      SrcPort		      1
+      Points		      [35, 0; 0, -10]
+      Branch {
+	Points			[0, -100]
+	DstBlock		"analog sine"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"ADC"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "ADC"
+      SrcPort		      1
+      Points		      [10, 0; 0, -15]
+      Branch {
+	DstBlock		"Queue"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -80]
+	Branch {
+	  Points		  [0, -80]
+	  DstBlock		  "digital values of ADC"
+	  DstPort		  1
+	}
+	Branch {
+	  DstBlock		  "digital sine"
+	  DstPort		  1
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "push clock"
+      SrcPort		      1
+      Points		      [0, 5; 25, 0; 0, -5; 15, 0]
+      Branch {
+	DstBlock		"push scope clock"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -80]
+	DstBlock		"Queue"
+	DstPort			2
+      }
+    }
+    Line {
+      SrcBlock		      "pop clock\n"
+      SrcPort		      1
+      Points		      [10, 0]
+      Branch {
+	DstBlock		"pop scope clock"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -130]
+	DstBlock		"Queue"
+	DstPort			3
+      }
+    }
+    Line {
+      SrcBlock		      "Queue"
+      SrcPort		      1
+      Points		      [0, -25; 25, 0]
+      Branch {
+	Points			[0, -70]
+	DstBlock		"Display output of queue"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 95]
+	DstBlock		"out queue scope"
+	DstPort			1
+      }
+    }
+  }
+}

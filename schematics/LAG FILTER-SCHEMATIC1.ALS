@@ -1,0 +1,18 @@
+.ALIASES
+R_R4            R4(1=0 2=N029110 )
+V_V3            V3(+=VIN3 -=0 )
+C_C3            C3(1=N029110 2=VOUT3 )
+L_L1            L1(1=VIN1 2=VOUT1 )
+R_R1            R1(1=0 2=VOUT1 )
+V_V2            V2(+=VIN2 -=0 )
+R_R2            R2(1=VIN2 2=VOUT2 )
+C_C2            C2(1=0 2=VOUT2 )
+V_V1            V1(+=VIN1 -=0 )
+R_R3            R3(1=VIN3 2=VOUT3 )
+_    _(VIN3=VIN3)
+_    _(VOUT3=VOUT3)
+_    _(VIN1=VIN1)
+_    _(VOUT2=VOUT2)
+_    _(VIN2=VIN2)
+_    _(VOUT1=VOUT1)
+.ENDALIASES
